@@ -1,15 +1,174 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap");
+@import "tailwindcss/preflight";
+@tailwind utilities;
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/*Global styles*/
+:root {
+  --primary-color: #9eff00;
+  --second-primary-color: #b1ff33;
+  --secondary-color: #ecffcc;
+  --second-secondary-color: #f9fff0;
+  --dark-background-color: #191919;
+  --light-bakcground-color: #333333;
+  --third-background-color: #4c4c4d;
+  --grey-color: #59595a;
+  --secondary-grey-color: #656567;
+  --third-grey-color: #98989a;
+  --fourth-grey-color: #e6e6e6;
 }
 
-html,
+html {
+  font-family: "barlow";
+}
+
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  background-color: var(--dark-background-color);
+  padding: 0%;
+  margin: 0%;
 }
+
+/*Home Page Styles*/
+/*hero section*/
+
+main .main-div {
+  background-image: url(/assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  font-weight: bold;
+  top: 0;
+  flex-direction: column;
+}
+
+.secondary-main-div {
+  margin-top: -200px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.btns button {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.btns .our-work {
+  background-color: var(--third-background-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.btns .our-work:hover {
+  background-color: var(--primary-color);
+  color: #000;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btns .contact {
+  background-color: var(--primary-color);
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.btns .contact:hover {
+  background-color: var(--second-primary-color);
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.target-audience {
+  z-index: 1000;
+  background-color: var(--light-bakcground-color);
+  width: 110%;
+  height: 10vh;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-weight: 200;
+  font-size: 1.75rem;
+  gap: 10px;
+  margin-left: -40px;
+}
+
+.target-audience .target {
+  background-color: var(--third-background-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/*Second Section*/
+
+.trusted {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  width: 20%;
+  height: 60px;
+  padding: 15px 10px;
+  border-radius: 15px;
+  border: var(--light-bakcground-color) 2px solid;
+  margin-top: -30px;
+}
+
+.second-div {
+  position: relative;
+
+  background-image: url(/assets/Container.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.second-div h1 {
+  font-size: 60px;
+   font-weight: bold;
+  margin-bottom: 20px;
+}
+.second-div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+  z-index: 1;
+  border-radius: inherit; /* if you have border-radius on .second-div */
+}
+
+.second-div > * {
+  position: relative;
+  z-index: 2;
+}
+
+/*Services Section*/
+
+.our-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 1rem; /* small space between cards */
+  padding: 1rem;
+  width: 95vw; /* full screen width */
+  box-sizing: border-box;
+}
+
+.specialities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
+  gap: 1rem; /* small space between cards */
+  padding: 1rem;
+  width: 95vw; /* full screen width */
+  box-sizing: border-box;
+}
+

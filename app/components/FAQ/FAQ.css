@@ -1,0 +1,78 @@
+.FAQCard-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.FAQCard {
+  background-color: var(--dark-background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.FAQCard-question {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.FAQCard-answer {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.FAQCard-button {
+  background-color: var(--third-background-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.FAQCard-button:hover {
+   background-color: var(--primary-color);
+    color: #000;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.FAQCard-header-open .FAQCard-question {
+  color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+.FAQCard-header-open .FAQCard-num {
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+.FAQCard-header-open .FAQCard-icon{
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.FAQCard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.FAQCard-num{
+    background: #191919;
+background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

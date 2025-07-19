@@ -3,6 +3,7 @@ import '../app.css'
 import Navbar from "~/components/navbar/Navbar";
 import Card from "~/components/card/Card";
 import TestmonialCard from "~/components/testmonialCard/TestmonialCard";
+import FAQCard from "~/components/FAQ/FAQ";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -94,6 +95,14 @@ export default function Home() {
      <div className="second-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
         <h1 className="text-[60px]">Frequently Asked Questions</h1>
         <p className="font-[500]">Still have any questions? <br/> Contact our team via <span className="text-(--primary-color) font-[800]" >ahmedsherifoo23@gmail.com</span></p>
+      </div>
+      <div className="FAQ">
+        <FAQCard  number={1} question="What services does SquareUp provide?" answer="SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."/>
+        <FAQCard number={2} question=  "What services does SquareUp provide?" answer="SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."/>
+        <FAQCard number={3} question=  "What services does SquareUp provide?" answer="SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."/>
+        <FAQCard number={4} question=  "What services does SquareUp provide?" answer="SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."/>
+        <FAQCard number={5} question=  "What services does SquareUp provide?" answer="SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."/>
+        <FAQCard number={6} question=  "What services does SquareUp provide?" answer="SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."/>
       </div>
     </main>
   );

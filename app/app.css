@@ -227,3 +227,14 @@ main .main-div {
   color: #000;
   transition: 0.4s ease-in-out;
 }
+
+/*FAQ*/
+
+.FAQ{
+   display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 1rem; /* small space between cards */
+  padding: 1rem;
+  width: 95vw; /* full screen width */
+  box-sizing: border-box;
+}

@@ -6,6 +6,7 @@ import TestmonialCard from "~/components/testmonialCard/TestmonialCard";
 import FAQCard from "~/components/FAQ/FAQ";
 import icon from "../../public/assets/Logooo.png";
 import BudgetRange from "../components/budgetrange/BudgetRange";
+import Footer from "~/components/footer/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -290,6 +291,7 @@ export default function Home() {
         <input type="submit" value="Submit" className="submit-btn" />
           </div>
       </form>
+      <Footer />
     </main>
   );
 }

@@ -375,7 +375,7 @@ main .main-div {
     border-radius: 5px;
     border: none;
     background-color: var(--light-background-color);
-    height: 17vh;
+    height: 20vh;
     font-size:20px;
   }
   .contact-purpose input{

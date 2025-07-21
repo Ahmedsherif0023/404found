@@ -4,6 +4,8 @@ import Navbar from "~/components/navbar/Navbar";
 import Card from "~/components/card/Card";
 import TestmonialCard from "~/components/testmonialCard/TestmonialCard";
 import FAQCard from "~/components/FAQ/FAQ";
+import icon from "../../public/assets/Logooo.png";
+import BudgetRange from "../components/budgetrange/BudgetRange";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -176,6 +178,7 @@ export default function Home() {
           </span>
         </p>
       </div>
+      
       <div className="FAQ">
         <div>
           <FAQCard
@@ -222,6 +225,71 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className="Thank-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
+       <img src={icon} alt="icon" />
+       <h1>Thank you for your interest in 404found</h1>
+       <p>We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us.</p>
+        <div className="btn">
+            <a href="/contact" className="btn">Start Project</a>
+        </div>
+      </div>
+      <form className="contact-form">
+      <div className="Name-and-Email">
+        <div className="Name">
+          <span>Full Name</span>
+          <input type="text" placeholder="Type here" />
+        </div>
+        <div className="Email">
+          <span>Email</span>
+          <input type="email" placeholder="Type here" />
+        </div>
+      </div>
+
+      <div className="contact-purpose">
+        <h1 className="purpose-question">
+          Why are you contacting us?
+        </h1>
+        <div className="purpose-options">
+          <div className="option">
+            <input type="checkbox" />
+            <span>Website building</span>
+          </div>
+          <div className="option">
+            <input type="checkbox" />
+            <span>Project Managment</span>
+          </div>
+          <div className="option">
+            <input type="checkbox" />
+            <span>App Development</span>
+          </div>
+          <div className="option">
+            <input type="checkbox" />
+            <span>Branding</span>
+          </div>
+          <div className="option">
+            <input type="checkbox" />
+            <span>Other</span>
+          </div>
+      </div>
+      
+      </div> 
+     <div className="budget-ratio">
+       <h1>Your budget</h1>
+       <p>slide to indicate your budget range</p>
+        <div className="budget">
+        <BudgetRange />
+      </div>
+     </div>
+     <div className="Message">
+          <span>Your Message</span>
+          <textarea placeholder="Type here"/>
+          
+        </div>
+
+        <div className="btn">
+        <input type="submit" value="Submit" className="submit-btn" />
+          </div>
+      </form>
     </main>
   );
 }

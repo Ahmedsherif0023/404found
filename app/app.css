@@ -4,7 +4,7 @@
 
 /*Global styles*/
 :root {
-  --primary-color: #9eff00;
+  --primary-color: rgb(158, 255, 0);
   --second-primary-color: #b1ff33;
   --secondary-color: #ecffcc;
   --second-secondary-color: #f9fff0;
@@ -458,3 +458,77 @@ input[type="range"] {
   font-size:20px;
 }
 
+
+/*Services page styles*/
+
+.Services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+/* border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+  border-bottom:  1px solid var(--grey-color);
+  border-top: none; */
+}
+
+.service-type{
+ border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+  border-bottom:  1px solid var(--grey-color);
+  border-top: none;
+  margin-top: -20px;
+  padding: 20px;
+}
+
+.service-type h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.service-type p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 80%;
+  color: var(--grey-color);
+}
+
+.service-type .include{
+  background-color: var(--light-background-color);
+  box-sizing:border-box;
+  width: 25%;
+  padding:10px;
+  border-radius: 10px;
+  font-size:20px;
+}
+
+.sub-service{
+  border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+  border-bottom:  1px solid var(--grey-color);
+  border-top: none;
+  margin-top: -20px;
+  padding: 20px;
+}
+
+.sub-service h2{
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--grey-color);
+}
+
+.sub-service-contain{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
+  gap: 1rem; /* small space between cards */
+  /* width: 80%; full screen width */
+  box-sizing: border-box;
+   /* border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+  border-bottom:  1px solid var(--grey-color); */
+  /* border-top: none; */
+}

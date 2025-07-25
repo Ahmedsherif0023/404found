@@ -532,3 +532,58 @@ input[type="range"] {
   border-bottom:  1px solid var(--grey-color); */
   /* border-top: none; */
 }
+
+.work-div p{
+  width:70%
+}
+
+
+/*Work Page*/
+
+.work-header{
+  color:#fff;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+  border-bottom:  1px solid var(--grey-color);
+  border-top: none;
+}
+.work-header h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom:  1px solid var(--grey-color);
+  width:250px;
+}
+
+.work-header p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 80%;
+  color: var(--grey-color);
+}
+
+.work-header .example-header{
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--light-background-color);
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Work{
+  margin:20px;
+   display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  gap: 1rem; /* small space between cards */
+}
+
+.Working-div{
+  width:90%;
+  margin:0 auto;
+}

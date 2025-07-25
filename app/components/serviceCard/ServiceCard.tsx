@@ -6,7 +6,7 @@ interface CardProps {
     img: string;
 }
 
-const SeerviceCard: React.FC<CardProps> = ({ title, img}) => {
+const ServiceCard: React.FC<CardProps> = ({ title, img}) => {
     return (
         <div className="ServiceCard-container">
             <div className="Servicecard">
@@ -21,4 +21,4 @@ const SeerviceCard: React.FC<CardProps> = ({ title, img}) => {
     );
 }
 
-export default SeerviceCard
+export default ServiceCard

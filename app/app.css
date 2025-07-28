@@ -12,6 +12,7 @@
   --light-background-color: #444444;
   --third-background-color: #4c4c4d;
   --grey-color: #59595a;
+  --second-grey-color:rgb(46, 46, 46);
   --secondary-grey-color: #656567;
   --third-grey-color: #98989a;
   --fourth-grey-color: #e6e6e6;
@@ -598,3 +599,137 @@ input[type="range"] {
   justify-content: center;
 }
 
+
+/*About Page styles*/
+.about,.Story-header{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  gap: 50px;
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  align-items: center;
+  border-left:1px var(--grey-color) solid;
+  border-right:1px var(--grey-color) solid;
+  border-bottom:1px var(--grey-color) solid;
+  border-top:none;
+}
+
+.about-image{
+  margin-top:-90px;
+}
+
+.about-image img{
+  width: 140vh;
+}
+
+.about-image .Logoo{
+  display: relative;
+  width:120px;
+  margin-left:90px;
+  margin-top:-210px;
+}
+
+.about-text h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-text p{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 90%;
+  color: var(--grey-color);
+  line-height: 1.6;
+  word-spacing: 2px;
+}
+.Story-header h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.today{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+   border-left:1px var(--grey-color) solid;
+  border-right:1px var(--grey-color) solid;
+  border-bottom:1px var(--grey-color) solid;
+  border-top:none;
+}
+
+.today .head{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.today .head img{
+  width: 100px;
+  height: auto;
+}
+
+.today .head-text h1{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--grey-color); 
+}
+
+.today .head-text p{
+  font-size: 18px;
+  font-weight: 500;
+  width: 80%;
+  color: var(--grey-color);
+}
+
+.today .body{
+  margin-top:20px;
+}
+
+.today .body .btn {
+    background-color: var(--primary-color);
+    color:var(--dark-background-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 140px;
+}
+.today .body .btn a:hover {
+    color: var(--second-secondary-color);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.today .body .welcome{
+  background-color: var(--second-grey-color);
+  display: flex;
+  flex-direction: row;
+  border: 1px var(--grey-color) solid;
+  padding: 20px;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color:var(--third-grey-color);
+}
+
+.today .body .welcome section{
+  background-color: var(--grey-color);
+  padding: 10px;
+  border-radius: 5px;
+  color:white;
+}

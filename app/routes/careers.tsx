@@ -7,7 +7,7 @@ export default function Careers() {
     <main>
       <Navbar />
       <h1 className="text-4xl font-bold mt-8">Our Careers</h1>
-      <p className="mt-4">This is the agency Careers page .</p>
+      <p className="mt-4">This is our agency's Careers page .</p>
     </main>
   );
 }

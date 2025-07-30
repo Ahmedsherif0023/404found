@@ -25,6 +25,7 @@ export default function Work() {
         <div className="example-header">
           Here are some examples of our notable works:
         </div>
+         </div>
         <div className="Work">
           <WorkCard
             title="E-commerce Platform for Fashion hub"
@@ -99,7 +100,7 @@ export default function Work() {
             description="ConnectCRM needed a web application to manage their customer relationships effectively. We developed a feature-rich CRM platform with lead management, communication tracking, and data analytics, enabling businesses to nurture customer relationships and drive growth."
             />
         </div>
-            </div>
+           
         <div className="Thank-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center Working-div">
                <img src={icon} alt="icon" />
                <h1>Let Us Bring Your Ideas to Life in the Digital World</h1>

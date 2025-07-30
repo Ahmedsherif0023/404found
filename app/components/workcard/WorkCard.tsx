@@ -27,7 +27,7 @@ const WorkCard: React.FC<CardProps> = ({ title, img,title2,description,Link}) =>
             <div className="Workcard">
                 <h1 className="WorkCard-title">{title}</h1>
                 <div className="image-container">
-                    <img src={img} alt="Work Image" className="card-image" />
+                    <img src={img} alt="Work Image" className="workcard-image" />
                 </div>
                        <div className="CardLink flex">
                          <div className='copy-btn'>

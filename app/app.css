@@ -834,3 +834,130 @@ border-left:1px var(--grey-color) solid;
   width: 90%;
   margin:0 auto ;
 }
+
+
+/*Contact page styles*/
+
+.contact-div p{
+  font-size: 1rem;
+  margin-top:-10px;
+}
+  
+.contact-ways{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 1px var(--grey-color) solid;
+  height: 100px;
+}
+
+.contact-way{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: var(--primary-color);
+  gap:8px;
+  background-color: var(--light-background-color);
+  padding:10px 5px;
+  border-radius: 10px;
+  width: 260px;
+  box-sizing: border-box;
+}
+
+.contact-way label{
+  color:white;
+}
+
+.connected{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  /* gap:200px; */
+  align-items: center;
+}
+
+.socials .icon-list{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  gap:20px;
+}
+
+.operating-days{
+   border:1px var(--grey-color) solid;
+  width:35%;
+  height:100px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:20px;
+  color:white;
+  margin-bottom:10px;
+  font-size: 20px;
+}
+
+.operating-days label{
+  background-color: var(--grey-color);
+  border-radius: 10px;
+  padding:10px 5px;
+  font-weight:700;
+}
+
+.connected .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    border: 2px solid var(--grey-color);
+    padding:10px;
+    border:1px var(--grey-color) solid;
+  width:35%;
+  height:100px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom:10px;
+  gap:60px;
+}
+
+
+
+.connected .socials li{
+      background: #191919;
+background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
+    font-weight: 800;
+    color: var(--primary-color);
+    /* padding: 0.5rem 1rem; */
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+.connected .socials li:hover {
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+
+}
+.connected .socials li a :hover {
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.divv{
+  border:1px var(--grey-color) solid;
+  margin-bottom:10px;
+}

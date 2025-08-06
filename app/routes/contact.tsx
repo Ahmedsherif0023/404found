@@ -10,6 +10,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import FAQCard from "~/components/FAQ/FAQ";
 import Footer from "~/components/footer/Footer";
+import WorkForm from "~/components/WorkForm/WorkForm"
+
 
 
 export default function Contact() {
@@ -28,63 +30,23 @@ export default function Contact() {
               <div className="contact-way"><FaPhone/> <label>+201274375560</label> </div>
               <div className="contact-way"><FaLocationDot /> <label>Egypt</label> </div>
             </div>
-             <form className="contact-form">
-                  <div className="Name-and-Email">
-                    <div className="Name">
-                      <span>Full Name</span>
-                      <input type="text" placeholder="Type here" />
-                    </div>
-                    <div className="Email">
-                      <span>Email</span>
-                      <input type="email" placeholder="Type here" />
-                    </div>
-                  </div>
-            
-                  <div className="contact-purpose">
-                    <h1 className="purpose-question">
-                      Why are you contacting us?
-                    </h1>
-                    <div className="purpose-options">
-                      <div className="option">
-                        <input type="checkbox" />
-                        <span>Website building</span>
-                      </div>
-                      <div className="option">
-                        <input type="checkbox" />
-                        <span>Project Managment</span>
-                      </div>
-                      <div className="option">
-                        <input type="checkbox" />
-                        <span>App Development</span>
-                      </div>
-                      <div className="option">
-                        <input type="checkbox" />
-                        <span>Branding</span>
-                      </div>
-                      <div className="option">
-                        <input type="checkbox" />
-                        <span>Other</span>
-                      </div>
-                  </div>
-                  
-                  </div> 
-                 <div className="budget-ratio">
-                   <h1>Your budget</h1>
-                   <p>slide to indicate your budget range</p>
-                    <div className="budget">
-                    <BudgetRange />
-                  </div>
-                 </div>
-                 <div className="Message">
-                      <span>Your Message</span>
-                      <textarea placeholder="Type here"/>
-                      
-                    </div>
-            
-                    <div className="btn">
-                    <input type="submit" value="Submit" className="submit-btn" />
-                      </div>
-                  </form>
+
+
+
+
+
+
+
+
+             <WorkForm />
+
+
+
+
+
+
+
+
 
                   <div className="connected">
                   <div className="operating-days">Operating Days <label>Monday to Friday</label></div>

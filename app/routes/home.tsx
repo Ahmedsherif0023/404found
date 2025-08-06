@@ -7,6 +7,7 @@ import FAQCard from "~/components/FAQ/FAQ";
 import icon from "../../public/assets/Logooo.png";
 import BudgetRange from "../components/budgetrange/BudgetRange";
 import Footer from "~/components/footer/Footer";
+import { NavLink , Link } from "react-router-dom";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -41,8 +42,8 @@ export default function Home() {
             <div className="target">any other foundation</div>
           </div>
           <div className="flex flex-row btns">
-            <button className="our-work">Our Works</button>
-            <button className="contact">Contact Us</button>
+               <button className="our-work"><NavLink  to="/work">Our Works</NavLink></button>
+             <button className="contact"><NavLink to="/contact">Contact Us</NavLink></button>
           </div>
         </div>
       </div>
@@ -64,18 +65,21 @@ export default function Home() {
           description="At 404 Found, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences."
           img="/assets/design.png"
           showLearnMore={true}
+          SectionLink="/services#design"
         />
         <Card
           title="Engineering"
           description="Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs."
           img="/assets/engineering.png"
           showLearnMore={true}
+          SectionLink="/services#engineering"
         />
         <Card
           title="Project Manager"
           description="Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process."
           img="/assets/x.png"
           showLearnMore={true}
+          SectionLink="/services#projectManagement"
         />
       </div>
       <div className="second-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
@@ -91,24 +95,28 @@ export default function Home() {
           description="Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions."
           img="/assets/expertise.png"
           showLearnMore={false}
+          SectionLink="."
         />
         <Card
           title="Client-Centric Approach"
           description="We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals, and tailor our services to meet your specific requirements. Your success is our success."
           img="/assets/client.png"
           showLearnMore={false}
+          SectionLink="."
         />
         <Card
           title="Results-Driven Solutions"
           description="Our primary focus is on delivering results. We combine creativity and technical expertise to create digital products that drive business growth, enhance user experiences, and provide a competitive advantage."
           img="/assets/result.png"
           showLearnMore={false}
+          SectionLink="."
         />
         <Card
           title="Collobrative Partnership"
           description="We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive."
           img="/assets/partnership.png"
           showLearnMore={false}
+          SectionLink="."
         />
       </div>
       <div className="second-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
@@ -231,7 +239,7 @@ export default function Home() {
        <h1>Thank you for your interest in 404found</h1>
        <p>We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us.</p>
         <div className="btn">
-            <a href="/contact" className="btn">Start Project</a>
+            <NavLink to="/contact" className="btn">Start Project</NavLink>
         </div>
       </div>
       <form className="contact-form">

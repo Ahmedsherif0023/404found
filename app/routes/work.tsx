@@ -3,6 +3,7 @@ import Navbar from "~/components/navbar/Navbar";
 import WorkCard from "~/components/workcard/WorkCard";
 import icon from "../../public/assets/Logooo.png";
 import Footer from "~/components/footer/Footer";
+import {NavLink} from "react-router-dom";
 
 export default function Work() {
   return (
@@ -106,7 +107,7 @@ export default function Work() {
                <h1>Let Us Bring Your Ideas to Life in the Digital World</h1>
                <p>No matter which services you choose, we are committed to delivering exceptional results that exceed your expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified vision for your digital product.</p>
                 <div className="btn">
-                    <a href="/contact" className="btn">Start Project</a>
+                    <NavLink to="/contact" className="btn">Start Project</NavLink>
                 </div>
               </div>
               <Footer />

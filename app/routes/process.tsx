@@ -5,6 +5,7 @@ import Navbar from "~/components/navbar/Navbar";
 import BudgetRange from "../components/budgetrange/BudgetRange";
 import Footer from "~/components/footer/Footer";
 import icon from "../../public/assets/Logooo.png";
+import {NavLink} from "react-router-dom";
 
 
 export default function Process() {
@@ -48,7 +49,7 @@ export default function Process() {
                <h1>Thank you for your interest in 404found</h1>
                <p>We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us.</p>
                 <div className="btn">
-                    <a href="/contact" className="btn">Start Project</a>
+                    <NavLink to="/contact" className="btn">Start Project</NavLink>
                 </div>
               </div>
               <form className="contact-form">

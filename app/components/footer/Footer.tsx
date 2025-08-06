@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../../public/assets/Logooo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -45,9 +45,9 @@ const Footer = () => {
            </ul>
            <ul className="socials">
                <span className="connected">Stay Connected</span>
-               <li> <a href="#"><FaFacebook /></a> </li>
-               <li> <a href="#"><FaLinkedin /></a> </li>
-               <li> <a href="#"><FaInstagram /></a> </li>
+               <li> <Link to="https://www.facebook.com/ahmedsherifoo23/"><FaFacebook /></Link> </li>
+               <li> <Link to="https://www.linkedin.com/in/ahmedsheriif/"><FaLinkedin /></Link> </li>
+               <li> <Link to="https://www.instagram.com/ishefo0"><FaInstagram /></Link> </li>
            </ul>
        
          </div>

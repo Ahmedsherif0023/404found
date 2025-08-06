@@ -4,7 +4,7 @@ import Navbar from "~/components/navbar/Navbar";
 import ProcessCard from '~/components/ProcessSteps/ProcessSteps';
 import StoryPoint from '~/components/storypoints/StoryPoint';
 import Footer from  '~/components/footer/Footer';
-
+import {NavLink} from "react-router-dom";
 export default function About() {
   return (
     <main>
@@ -56,7 +56,7 @@ export default function About() {
                 <p>Welcome to 404Found</p>
                 <section>Where collaboration, Expertise, and Client-Centricity Intersect to Shape the Future of Digital Innovation.</section>
                   <div className="btn">
-                    <a href="/contact" className="btn">Start Project</a>
+                    <NavLink to="/contact" className="btn">Start Project</NavLink>
                 </div>
               </div>
             </div>

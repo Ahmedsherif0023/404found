@@ -17,7 +17,7 @@ export default function Services() {
           </p>
         </div>
         <div className="service-type">
-        <h1>Design</h1>
+        <h1 id="design">Design</h1>
         <p>At 404Found, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences. </p>
         <div className="include">
           Our design services include:
@@ -53,7 +53,7 @@ export default function Services() {
           <ServiceCard title="Marketing Collateral Design (Brochures, Business Cards, etc.)" img="/assets/Marketing.png" />
         </div>
         <div className="service-type">
-        <h1>Engineering</h1>
+        <h1  id="engineering">Engineering</h1>
         <p>Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs.</p>
         <div className="include">
           Our engineering services include:
@@ -87,7 +87,7 @@ export default function Services() {
           <ServiceCard title="Legacy System modernization and Migratoin" img="/assets/Legacy.png" />
         </div>
         <div className="service-type">
-        <h1>Project Management</h1>
+        <h1 id="projectManagement">Project Management</h1>
         <p>Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.</p>
         <div className="include">
           Our project management services include:

@@ -36,7 +36,9 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-btn">
-            <NavLink to="/contact" className="btn">Contact Us</NavLink>
+            <button className="btn">
+                <NavLink to="/contact" >Contact Us</NavLink>
+            </button>
         </div>
     </nav>
   )

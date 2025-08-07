@@ -63,8 +63,16 @@ nav .btn{
     margin-right:20px;
     font-weight: bold;
 }
-.navbar-btn a:hover{
+.navbar-btn .btn:hover{
         background-color: var(--second-primary-color);
     color: var(--second-secondary-color);
     transition: 0.3s ease-in-out;
+}
+.navbar-btn .btn .active{
+background-color: var(--primary-color);
+    color:var(--dark-background-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }

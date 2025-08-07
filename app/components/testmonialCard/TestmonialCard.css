@@ -1,10 +1,13 @@
-.TestCard-container{
+.TestCard-container {
     display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  flex-direction: column;
-  align-items: center
-  ;
+    justify-content: space-between;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 
@@ -19,6 +22,138 @@
 
 .TestCard-description{
     font-size: 16px;
-  margin-bottom: 20px;
-  text-align: left;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.person-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.person-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.person-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.person-role {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.learn-more-btn {
+    background-color: var(--third-background-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .TestCard-container {
+        margin: 10px;
+        padding: 1rem;
+        width: 90%;
+        /* max-width: 88%; */
+    }
+
+    .TestCard-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .TestCard-description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .person-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .person-name {
+        font-size: 1.1rem;
+    }
+
+    .person-role {
+        font-size: 0.9rem;
+    }
+
+    .learn-more-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .TestCard-container {
+        margin: 10px 0;
+        width: 100%;
+        padding: 1rem 0.8rem;
+    }
+
+    .TestCard-title {
+        font-size: 18px;
+    }
+
+    .TestCard-description {
+        font-size: 13px;
+    }
+
+    .card-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .person-details {
+        gap: 0.8rem;
+        margin: 0.8rem 0;
+    }
+
+    .person-name {
+        font-size: 1.25rem;
+    }
+
+    .person-role {
+        font-size: 1rem;
+    }
+
+    .website-btn {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.75rem;
+        width: 100px;
+    }
+    .person-work{
+      display:flex;
+      flex-direction: column;
+      gap:20px;
+    }
 }

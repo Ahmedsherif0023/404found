@@ -3,8 +3,11 @@
     padding: 10px;
     color: #fff;
     font-family: 'Arial', sans-serif;
-    width:100%;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .footer {
     display: flex;
@@ -97,6 +100,73 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     transition: 0.3s ease-in-out;
 }
 
+/* Responsive styles for tablet and mobile */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        width: 100vw;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    .footer .nav {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .footer .socials {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer .nav {
+        padding: 5px;
+    }
+
+    .footer .nav ul {
+        gap: 10px;
+    }
+
+    .footer .nav ul .connected {
+        font-size: 20px;
+    }
+
+    .footer .socials li {
+        width: 35px;
+        height: 35px;
+    }
+    .footer-container .contact{
+        display: flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .footer-container .contact ul{
+        display:flex;
+        margin:20px;
+    }
+
+
+    .footer-container .contact ul li{
+        font-size: 1rem;
+    }
+    .footer-container .contact ul li span{
+        font-size:0.90rem;
+    }
+.footer-container .contact p{
+    font-size: 0.7rem;
+}
+    
+}
 
 .contact {
     list-style: none;
@@ -105,6 +175,10 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
 }
 
 .contact li {
@@ -114,16 +188,19 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     gap: 10px;
     font-size: 20px;
     color: var(--primary-color);
+    flex-wrap: wrap;
 }
-.contact ul{
+
+.contact ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
-.contact span{
+.contact span {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -131,5 +208,6 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:5px;
+    margin-top: 5px;
+    word-break: break-word;
 }

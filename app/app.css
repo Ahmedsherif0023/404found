@@ -31,21 +31,71 @@ body {
 /*Home Page Styles*/
 /*hero section*/
 
+main {
+  margin-top: 80px; /* Add space for fixed navbar */
+}
+
 main .main-div {
   background-image: url(/assets/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   width: 100%;
   font-weight: bold;
   top: 0;
   flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .secondary-main-div {
   margin-top: -200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
 }
+
+.sub-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.target-audience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.target {
+  padding: 0.5rem 1rem;
+  background-color: var(--third-background-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin: 0.25rem;
+}
+
+.target:hover {
+  transform: translateY(-2px);
+  background-color: var(--light-background-color);
+}
+
 
 .btns {
   display: flex;
@@ -58,7 +108,8 @@ main .main-div {
 
 .btns button {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .btns .our-work {
@@ -176,10 +227,12 @@ main .main-div {
 /*testmonials*/
 .testmonials {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
-  gap: 1rem; /* small space between cards */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   padding: 1rem;
-  width: 95vw; /* full screen width */
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -960,4 +1013,196 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
 .divv{
   border:1px var(--grey-color) solid;
   margin-bottom:10px;
+}
+/* Responsive styles for main content */
+@media screen and (max-width: 768px) {
+  main .main-div {
+    text-align: center;
+    padding: 1rem;
+    min-height: calc(100vh - 60px);
+  }
+
+  .secondary-main-div {
+    margin-top: -100px;
+    padding: 1rem;
+  }
+
+  .target-audience {
+    font-size: 1.1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .target-audience label {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .target {
+    margin: 0.25rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .btns {
+    position: relative;
+    z-index: 0;
+    padding-top: 1rem;
+  }
+
+  .our-services, .specialities, .testmonials, .FAQ {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    padding: 1rem !important;
+    gap: 2rem !important;
+  }
+
+  .contact-form {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .Name-and-Email {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-form .Name, .contact-form .Email {
+    width: 100%;
+  }
+
+  .contact-purpose {
+    width: 100%;
+  }
+
+  .purpose-options {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .second-div {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .second-div h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .second-div p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btns {
+    flex-direction: row;
+    gap: 1rem;
+    width: 60%;
+    
+  }
+
+  .btns button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 60px;
+  }
+
+  main .main-div {
+    font-size: 32px;
+    min-height: calc(100vh - 60px);
+  }
+
+  .secondary-main-div {
+    margin-top: 10px;
+    padding: 0.5rem;
+    height: 70vh;
+  }
+
+  .target-audience {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    gap: 0.3rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .target {
+    padding: 0.3rem 0.6rem;
+    text-align: center;
+    margin: 0.15rem;
+  }
+
+  .target-audience label {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .btns {
+    padding: 0 1rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btns button {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+
+  .second-div h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .second-div p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .testmonials {
+    gap: 1rem !important;
+  }
+
+  .FAQ {
+    padding: 0.5rem !important;
+  }
+
+  .target-audience {
+    font-size: 1rem;
+  }
+
+  .trusted {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .second-div h1 {
+    font-size: 40px;
+  }
+
+  .contact-purpose{
+    height:35vh;
+  }
+.contact-purpose .purpose-question{
+  margin-bottom: 10px;
+}
+  
 }

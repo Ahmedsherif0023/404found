@@ -1,23 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css';
 import Logo from "../../../public/favicon.ico";
 import Name from "../../../public/Name.png"
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  return (
-    <nav>
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
+        <nav>
             <a href="/">
-        <div className="navbar-logo">
-            <img src={Logo} alt="Logo" className='Logo'/>
-            <img src={Name} alt="Name" className='Name'/>
+                <div className="navbar-logo">
+                    <img src={Logo} alt="Logo" className='Logo'/>
+                    <img src={Name} alt="Name" className='Name'/>
             
         </div>
             </a>
-        <ul>
-            <li>
-                <NavLink to="/">Home</NavLink>
-            </li>
+            <button className="mobile-menu-btn" onClick={toggleMenu}>
+                ☰
+            </button>
+            <ul className={isMenuOpen ? 'show' : ''}>
+                <li>
+                    <NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink>
+                </li>
             <li>
                 <NavLink to="/services">Services</NavLink>
             </li>

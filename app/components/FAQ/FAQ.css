@@ -80,3 +80,8 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
 }
 
 
+@media screen and (max-width: 480px) {
+  .FAQCard-container .FAQCard-question{
+    font-size: 1.5rem;
+  }
+}

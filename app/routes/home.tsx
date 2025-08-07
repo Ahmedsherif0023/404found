@@ -34,7 +34,7 @@ export default function Home() {
               beautiful experiences
             </p>
           </div>
-          <div className="flex flex-row items-center justify-center m-8 target-audience">
+          <div className="flex flex-wrap items-center justify-center mx-4 my-8 md:m-8 target-audience">
             <label>for</label>
             <div className="target">Startups</div>,
             <div className="target">Businesses</div>,
@@ -42,7 +42,7 @@ export default function Home() {
             and
             <div className="target">any other foundation</div>
           </div>
-          <div className="flex flex-row btns">
+          <div className="flex flex-row btns mt-8 md:mt-16">
                <button className="our-work"><NavLink  to="/work">Our Works</NavLink></button>
              <button className="contact"><NavLink to="/contact">Contact Us</NavLink></button>
           </div>

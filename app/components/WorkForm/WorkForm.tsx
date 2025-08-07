@@ -33,7 +33,6 @@ const WorkForm: React.FC = () => {
       <input type="email" name="email" placeholder="Type here" required />
     </div>
   </div>
-
   <div className="contact-purpose">
     <h1 className="purpose-question">Why are you contacting us?</h1>
     <div className="purpose-options">

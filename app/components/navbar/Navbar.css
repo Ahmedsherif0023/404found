@@ -5,6 +5,160 @@ nav{
     justify-content: space-between;
     align-items: center;
     font-weight:900;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(25, 25, 25, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 1rem;
+        width: 100vw;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: relative;
+        z-index: 1001;
+    }
+
+    nav .btn {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(25, 25, 25, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem 1rem;
+        z-index: 1000;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    nav ul.show {
+        display: flex;
+        opacity: 1;
+        animation: slideIn 0.4s ease-out;
+    }
+
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        50% {
+            opacity: 0.5;
+            transform: translateY(-10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    nav ul a {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    nav ul a:hover {
+        background-color: var(--third-background-color);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+        color: var(--primary-color);
+        box-shadow: 0 0 15px rgba(158, 255, 0, 0.1);
+    }
+
+    nav .navbar-logo .Name {
+        width: 80px;
+    }
+
+    nav .navbar-logo .Logo {
+        width: 25px;
+    }
+
+    nav .btn {
+        margin: 1rem 0;
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    nav .navbar-logo .Name {
+        width: 60px;
+    }
+
+    nav .navbar-logo .Logo {
+        width: 20px;
+    }
+
+    nav ul {
+        padding-top: 3rem;
+    }
+
+    nav ul a {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    .mobile-menu-btn {
+        font-size: 1.3rem;
+        padding: 0.3rem;
+    }
+
+    nav .btn {
+        width: 180px;
+        padding: 8px 16px;
+    }
 }
 
 nav .navbar-logo{

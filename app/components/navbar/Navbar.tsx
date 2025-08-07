@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css';
-import Logo from "../../../public/assets/Logooo.png";
+import Logo from "../../../public/favicon.ico";
+import Name from "../../../public/Name.png"
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -8,8 +9,9 @@ const Navbar = () => {
     <nav>
             <a href="/">
         <div className="navbar-logo">
-            <img src={Logo} alt="Logo" />
-            <span>404 Found</span>
+            <img src={Logo} alt="Logo" className='Logo'/>
+            <img src={Name} alt="Name" className='Name'/>
+            
         </div>
             </a>
         <ul>
@@ -34,7 +36,7 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-btn">
-            <a href="/contact" className="btn">Contact Us</a>
+            <NavLink to="/contact" className="btn">Contact Us</NavLink>
         </div>
     </nav>
   )

@@ -3,7 +3,7 @@ import '../app.css'
 import Navbar from "~/components/navbar/Navbar";
 import Footer from "~/components/footer/Footer";
 import ServiceCard from "~/components/serviceCard/ServiceCard";
-import icon from "../../public/assets/Logooo.png";
+import Logo from "../../public/favicon.ico";
 
 export default function Services() {
   return (
@@ -121,7 +121,7 @@ export default function Services() {
           <ServiceCard title="Bug Tracking and Issue Resolution" img="/assets/Bug.png" />
         </div>
         <div className="Thank-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
-               <img src={icon} alt="icon" />
+               <img src={Logo} alt="icon" />
                <h1>Let us Bring your Ideas to Life in the Digital World.</h1>
                <p>No matter which services you choose, we are committed to delivering exceptional results that exceed your expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified vision for your digital product.</p>
                 <div className="btn">

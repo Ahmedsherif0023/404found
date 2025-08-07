@@ -23,9 +23,9 @@
     width: 100%;
     padding: 20px;
 }
-.footer .nav .navbar-logo img{
-    width: 50px;
-    height: 50px;
+.footer .nav .navbar-logo .Logo{
+    width: 40px;
+    height: 40px;
 }
 .footer .nav ul{
     display: flex;
@@ -51,8 +51,9 @@
     justify-content:center;
 }
 
-.footer .navbar-logo span{
-    margin-top:10px;
+.footer .navbar-logo .Name{
+    margin-left:10px;
+    width: 100px;
 }
 
 .footer .socials li{

@@ -119,7 +119,7 @@ export default function Contact() {
                         </div>
                         <div className="today divv">
             <div className="head">
-              <img src="./assets/Logooo.png" alt="Logo" />
+              <img src="./favicon.ico" alt="Logo"  className="Logo"/>
               <div className="head-text">
                 <h1>Today, 404Found Continues to Thrive as a Leading Digital Product Agency.....</h1>
                 <p>Combining the power of design, engineering, and project management to create transformative digital experiences. They invite you to join them on their journey and discover how they can help bring your digital ideas to life.</p>

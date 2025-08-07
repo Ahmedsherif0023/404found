@@ -280,7 +280,7 @@ main .main-div {
 
 
 .Thank-div img{
-  width: 150px;
+  width: 100px;
   height: auto;
   max-width: 600px; /* Adjust as needed */
   margin-top: 20px;
@@ -684,7 +684,7 @@ input[type="range"] {
 }
 
 .today .head img{
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 

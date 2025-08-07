@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../../public/assets/Logooo.png";
+import Logo from "../../../public/favicon.ico";
+import Name from "../../../public/Name.png"
 import { NavLink , Link} from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -16,8 +17,8 @@ const Footer = () => {
          <div className="nav">
            <a href="/">
              <div className="navbar-logo">
-               <img src={Logo} alt="Logo" />
-               <span>404 Found</span>
+               <img src={Logo} alt="Logo" className="Logo"/>
+               <img src={Name} alt="Name" className='Name'/>
              </div>
            </a>
            <ul>

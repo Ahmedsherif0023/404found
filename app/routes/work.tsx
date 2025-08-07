@@ -1,7 +1,7 @@
 import "../app.css";
 import Navbar from "~/components/navbar/Navbar";
 import WorkCard from "~/components/workcard/WorkCard";
-import icon from "../../public/assets/Logooo.png";
+import Logo from "../../public/favicon.ico";
 import Footer from "~/components/footer/Footer";
 import {NavLink} from "react-router-dom";
 
@@ -103,7 +103,7 @@ export default function Work() {
         </div>
            
         <div className="Thank-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center Working-div">
-               <img src={icon} alt="icon" />
+               <img src={Logo} alt="icon" />
                <h1>Let Us Bring Your Ideas to Life in the Digital World</h1>
                <p>No matter which services you choose, we are committed to delivering exceptional results that exceed your expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified vision for your digital product.</p>
                 <div className="btn">

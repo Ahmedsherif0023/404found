@@ -28,7 +28,7 @@ export default function Services() {
         </div>
        
         <div className="sub-service-contain">
-          <ServiceCard title="User Research and Persona Development" img="/assets/UR.png" />
+          <ServiceCard title="User Research and Personal Development" img="/assets/UR.png" />
           <ServiceCard title="Information Architecture and Wireframing" img="/assets/IA.png" />  
           <ServiceCard title="Interactive Prototyping and User Testing" img="/assets/IP.png" />
           <ServiceCard title="UI Design and Visual Branding" img="/assets/UI.png" />

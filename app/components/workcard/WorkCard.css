@@ -98,3 +98,21 @@ color: var(--primary-color);
     text-align: left;
     font-size: 15px;
 }
+
+
+@media screen and (max-width: 768px){
+  .WorkCard-container .Workcard{
+    border: 1px solid var(--grey-color);
+    margin: 5px;
+  }
+
+  .WorkCard-container .WorkCard-title{
+    font-size: 1.25rem;
+  }
+  .Workcard p{
+    font-size: 0.85rem;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+}

@@ -5,6 +5,7 @@
   align-items: center;
   border: 1px solid var(--grey-color);
   padding: 40px;
+  width: 100%;
 }
 
 
@@ -38,3 +39,30 @@ background: linear-gradient(315deg, rgb(29, 29, 29) 60%, rgb(158, 255, 0) 130%);
     align-items: center;
     margin-bottom: 20px;
 }  
+
+@media screen and (max-width: 768px){
+  .ServiceCard-title{
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .Servicecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Servicecard .image-container{
+    width: 8vh;
+    height: auto;
+  }
+
+  .Servicecard .image-container img{
+    width: 100%;
+    height: auto;
+  }
+}

@@ -6,13 +6,14 @@ import BudgetRange from "../components/budgetrange/BudgetRange";
 import Footer from "~/components/footer/Footer";
 import Logo from "../../public/favicon.ico";
 import {NavLink} from "react-router-dom";
-import WorkForm from "~/components/WorkForm/WorkForm"
+import WorkForm from "~/components/WorkForm/WorkForm";
+
 
 
 export default function Process() {
   return (
     <main>
-      <Navbar />
+      <Navbar/>
       <div className="Process">
 
      

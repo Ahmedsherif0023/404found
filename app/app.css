@@ -1233,6 +1233,42 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
   padding:10px 0px;
   }
 
+  .Thank-div img{
+    width:8vh ;
+  }
+  .Thank-div h1{
+ font-size: 0.95rem;
+  margin-top: 20px;
+  width: 80%;
+  }
+
+  .Thank-div p{
+    font-size: 0.85rem;
+  width: 90%;
+  }
+
+  .Thank-div .btn{
+     width: 140px;
+  font-size: 0.75rem;
+  padding:10px 0px;
+  }
+
+  .Process .Steps ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  .Process .Steps ul{
+    display: grid;
+  width:90%;
+  grid-template-columns: repeat(1, 1fr); /* 2 equal-width columns */
+  margin: 0 auto;
+    padding-top:30px;
+  }
+  
 }
 
 @media screen and (max-width: 480px) {

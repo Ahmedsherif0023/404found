@@ -39,7 +39,6 @@ nav{
     nav {
         padding: 1rem;
         width: 100vw;
-        height: 9vh;
     }
 
     .mobile-menu-btn {
@@ -53,8 +52,7 @@ nav{
     }
 
     nav ul {
-            display: flex; /* so layout doesn't break */
-        flex-direction: column;
+        display: none;
         position: fixed;
         top: 60px;
         left: 0;
@@ -62,18 +60,21 @@ nav{
         bottom: 0;
         background-color: rgba(25, 25, 25, 0.98);
         backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem 1rem;
+        z-index: 1000;
         justify-content: flex-start;
         align-items: center;
         gap: 2rem;
         opacity: 0;
-        pointer-events: none; /* block clicks when hidden */
         transition: opacity 0.3s ease;
-        height: 35vh;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
     }
 
     nav ul.show {
-       opacity: 1;
-        pointer-events: auto; /* enable clicks when open */
+        display: flex;
+        opacity: 1;
         animation: slideIn 0.4s ease-out;
     }
 

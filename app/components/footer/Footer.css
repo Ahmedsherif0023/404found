@@ -102,11 +102,6 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
 
 /* Responsive styles for tablet and mobile */
 @media screen and (max-width: 768px) {
-    
-    .footer .nav ul li {
-        font-size: 0.85rem;
-        margin: 10px 0px;
-    }
     .footer-container {
         width: 100vw;
         padding: 10px 0;
@@ -125,13 +120,11 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
         justify-content: center;
         gap: 15px;
         width: 100%;
-        
     }
 
     .footer .socials {
         width: fit-content;
     }
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -167,7 +160,7 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
         font-size: 1rem;
     }
     .footer-container .contact ul li span{
-        font-size:0.50rem;
+        font-size:0.90rem;
     }
 .footer-container .contact p{
     font-size: 0.7rem;

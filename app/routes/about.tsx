@@ -15,6 +15,9 @@ export default function About() {
         </p>
       </div>
 
+
+
+
       <div className="about">
         <div className="about-text">
           <h1>
@@ -23,13 +26,17 @@ export default function About() {
           <p>404Found is a digital product agency that is passionate about crafting exceptional digital experiences. We specialize in design, engineering, and project management, helping businesses thrive in the digital landscape. At SquareUp, we follow a structured and collaborative process to ensure the successful delivery of exceptional digital products. Our process combines industry best practices, creative thinking, and a client-centric approach.</p>
         </div>
         <div className="about-image">
-          <img src="./assets/xxx.png" alt="img" />
+          <img src="./assets/xxx.png" alt="img" className="background"/>
           <img src="./favicon.ico" alt="Logo" className="Logoo"/>
         </div>
       </div>
         <div className="Story-header">
           <h1>Our Story</h1>
         </div>
+
+
+
+
         <div className="Steps">
                   <ul>
         
@@ -42,6 +49,12 @@ export default function About() {
                 
                   </ul>
                 </div>
+
+
+
+
+
+                
           <div className="today">
             <div className="head">
               <img src="./favicon.ico" alt="Logo"  className="Logo"/>

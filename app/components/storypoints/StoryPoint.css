@@ -68,3 +68,29 @@
     height:150px;
     font-weight: 600;
 }
+
+@media screen and (max-width:768px) {
+    .StoryPoint-container{
+        width:90%;
+        margin:0px auto;
+    }
+    .StoryPoint{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        flex-direction: column;
+    }
+    .StoryPoint-desc{
+        width: 38vh;
+        font-size:0.95rem;
+        height: auto;
+    }
+    .StoryPoint-title{
+        width:25vh;
+    }
+    .num-container{
+        font-size:70px;
+    }
+  
+}

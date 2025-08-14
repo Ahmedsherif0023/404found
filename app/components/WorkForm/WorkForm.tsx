@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import "./WorkForm.css";
 import "../../app.css";
 
 const WorkForm: React.FC = () => {
@@ -38,7 +39,7 @@ const WorkForm: React.FC = () => {
     <div className="purpose-options">
       <div className="option">
         <input type="checkbox" name="purpose" value="Website building" />
-        <span>Website building</span>
+        <span >Website building</span>
       </div>
       <div className="option">
         <input type="checkbox" name="purpose" value="Project Management" />

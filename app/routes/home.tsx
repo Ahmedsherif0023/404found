@@ -53,7 +53,7 @@ export default function Home() {
           Trusted by 250+ Clients
         </div>
       </div>
-      <div className="second-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
+      <div className="second-div min-h-[200px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
         <h1 className="text-[60px]">Our Services</h1>
         <p>
           Transform your brand with our innovative digital solutions that
@@ -179,7 +179,7 @@ export default function Home() {
           showLearnMore={false}
         />
       </div>
-      <div className="second-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
+      <div className="second-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center faq-second-div">
         <h1 className="text-[60px]">Frequently Asked Questions</h1>
         <p className="font-[500]">
           Still have any questions? <br /> Contact our team via{" "}
@@ -189,41 +189,40 @@ export default function Home() {
         </p>
       </div>
       
-      <div className="FAQ">
-        <div>
-          <FAQCard
+      <div className="FAQ Desktop-FAQ">
+         <div>
+           <FAQCard
             number={1}
             question="What services does 404Found provide?"
             answer="404Found offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."
-          />
-          <FAQCard
+          /> <FAQCard
             number={3}
             question="What industries does 404Found work with?"
             answer="Any Kind of industry can be served by 404Found. We have experience working with startups, small businesses, and large enterprises across various sectors, including e-commerce, healthcare, finance, education, and more."
-          />
-          <FAQCard
+          /> <FAQCard
             number={5}
             question="Do you offer ongoing support and maintenance after the project is completed?"
             answer="Of Course! We provide ongoing support and maintenance services to ensure that your digital products continue to perform optimally. Our team is available to address any issues, implement updates, and make enhancements as needed."
-          />
-          <FAQCard
+          />  <FAQCard
             number={7}
             question="How involved will I be in the project development process?"
             answer="You will be actively involved throughout the project development process. We believe in transparent communication and collaboration, and we will keep you informed at every stage. Your feedback and input are crucial to ensuring that the final product meets your expectations."
           />
-        </div>
-        <div>
-          <FAQCard
+         </div>
+          <div>
+             <FAQCard
             number={2}
             question="How can 404Found help my business?"
             answer="We can help your business by providing tailored digital solutions that enhance your online presence, improve user experiences, and drive business growth. Whether you need a new website, a mobile app, or custom software, our team has the expertise to deliver results."
           />
+         
           <FAQCard
             number={4}
             question="How long does it take to complete a project with 404Found?"
             answer="It depends on the complexity and scope of the project. We work closely with our clients to establish realistic timelines and milestones. Typically, projects can range from a few weeks to several months, depending on the requirements."
           />
-          <FAQCard
+          
+           <FAQCard
             number={6}
             question="Can you work with existing design or development frameworks?"
             answer="Absolutely! We can work with your existing design or development frameworks, or we can create custom solutions from scratch. Our team is flexible and adaptable to meet your specific needs and preferences."
@@ -233,7 +232,49 @@ export default function Home() {
             question="Can you help with website or app maintenance and updates?"
             answer="Yes, we offer website and app maintenance services to ensure that your digital products remain up-to-date, secure, and functional. We can handle regular updates, bug fixes, and feature enhancements as needed."
           />
-        </div>
+          </div>
+         
+      </div>
+      <div className="FAQ Mobile-FAQ">
+          <FAQCard
+            number={1}
+            question="What services does 404Found provide?"
+            answer="404Found offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."
+          />
+          <FAQCard
+            number={2}
+            question="How can 404Found help my business?"
+            answer="We can help your business by providing tailored digital solutions that enhance your online presence, improve user experiences, and drive business growth. Whether you need a new website, a mobile app, or custom software, our team has the expertise to deliver results."
+          />
+          <FAQCard
+            number={3}
+            question="What industries does 404Found work with?"
+            answer="Any Kind of industry can be served by 404Found. We have experience working with startups, small businesses, and large enterprises across various sectors, including e-commerce, healthcare, finance, education, and more."
+          /> 
+          <FAQCard
+            number={4}
+            question="How long does it take to complete a project with 404Found?"
+            answer="It depends on the complexity and scope of the project. We work closely with our clients to establish realistic timelines and milestones. Typically, projects can range from a few weeks to several months, depending on the requirements."
+          />
+          <FAQCard
+            number={5}
+            question="Do you offer ongoing support and maintenance after the project is completed?"
+            answer="Of Course! We provide ongoing support and maintenance services to ensure that your digital products continue to perform optimally. Our team is available to address any issues, implement updates, and make enhancements as needed."
+          /> 
+           <FAQCard
+            number={6}
+            question="Can you work with existing design or development frameworks?"
+            answer="Absolutely! We can work with your existing design or development frameworks, or we can create custom solutions from scratch. Our team is flexible and adaptable to meet your specific needs and preferences."
+          />
+          <FAQCard
+            number={7}
+            question="How involved will I be in the project development process?"
+            answer="You will be actively involved throughout the project development process. We believe in transparent communication and collaboration, and we will keep you informed at every stage. Your feedback and input are crucial to ensuring that the final product meets your expectations."
+          /> <FAQCard
+            number={8}
+            question="Can you help with website or app maintenance and updates?"
+            answer="Yes, we offer website and app maintenance services to ensure that your digital products remain up-to-date, secure, and functional. We can handle regular updates, bug fixes, and feature enhancements as needed."
+          />
       </div>
       <div className="Thank-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
        <img src={Logo} alt="icon" />

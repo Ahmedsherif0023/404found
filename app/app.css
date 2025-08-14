@@ -292,13 +292,17 @@ main .main-div {
 
 .FAQ{
     display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 equal-width columns */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
   grid-auto-rows: auto; /* each item’s height depends on its content */
   gap: 1rem;
   padding: 1rem;
   width: 95vw;
   box-sizing: border-box;
   height:auto;
+}
+
+.Mobile-FAQ{
+  display: none;
 }
 
 /*Contact*/
@@ -358,7 +362,7 @@ main .main-div {
     margin-bottom: 60px;
 }
 .Thank-div .btn a:hover ,.contact-form .btn .submit-btn:hover{
-        /* background-color: var(--second-primary-color); */
+        background-color: var(--second-primary-color);
     color: var(--second-secondary-color);
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -1115,9 +1119,10 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
   }
 
   .purpose-options {
-    grid-template-columns: 1fr !important;
+   grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
 
   .second-div {
     padding: 2rem 1rem;
@@ -1153,7 +1158,9 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     width: 260px;
     font-size: 1rem;
   }
-
+ .Services-container{
+  width:90%;
+ }
   .Services-container .sub-service h2{
     font-size: 1.3rem;
   }
@@ -1176,6 +1183,14 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     margin-top: 20px;
     border: 1px var(--grey-color) solid;
   }
+
+  .Mobile-FAQ{
+    display: block;
+  }
+
+  .Desktop-FAQ{
+    display: none;
+  }
  .FAQ {
     grid-template-columns: 1fr;
   }
@@ -1188,6 +1203,7 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     font-size: 0.75rem;
     width: 35vh;
   }
+  
 
  .Services-container .Thank-div img{
   width: 8vh;
@@ -1269,21 +1285,11 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
   padding:10px 0px;
   }
 
-  .Process .Steps ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+ 
 
 
-  .Process .Steps ul{
-    display: grid;
-  width:90%;
-  grid-template-columns: repeat(1, 1fr); /* 2 equal-width columns */
-  margin: 0 auto;
-    padding-top:30px;
-  }
+
+
   .about{
     display:flex;
     flex-direction: column;
@@ -1309,14 +1315,50 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     width:70px;
   }
 
-  .Steps ul{
-   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* 2 equal-width columns */
+
+  .faq-second-div p{
+    font-size: 2rem;
   }
 
+   .contact-purpose span{
+    font-size: 13px;
+    color: #fff;
+  }
+  .contact-purpose{
+    height: 23vh !important;
+  }
+ 
+  .Steps ul{
+  grid-template-columns: repeat(1, 1fr); /* 3 equal-width columns */
+  }
+  .Steps{
+    margin-bottom: 20px;
+  }
+
+  .today{
+    border: 1px solid var(--grey-color);
+  }
+  .today .head{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .today .head-text h1{
+    font-size:20px;
+    text-align: center;
+  }
+.today .head-text p{
+  font-size:15px;
+  width:40vh;
+}
+.today .body{
+  
+}
 }
 
 @media screen and (max-width: 480px) {
+  
   main {
     margin-top: 60px;
   }
@@ -1365,15 +1407,15 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
   }
 
   .second-div h1 {
-    font-size: 2.5rem !important;
+    font-size: 1.75rem !important;
   }
 
   .second-div p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .contact-form {
-    width: 100%;
+    width: 90%;
     padding: 0.5rem;
   }
 
@@ -1394,15 +1436,15 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     font-size: 1.2rem;
   }
 
-  .second-div h1 {
-    font-size: 40px;
-  }
-
+ 
   .contact-purpose{
     height:35vh;
   }
 .contact-purpose .purpose-question{
   margin-bottom: 10px;
 }
+.faq-second-div p{
+    font-size: 1rem;
+  }
   
 }

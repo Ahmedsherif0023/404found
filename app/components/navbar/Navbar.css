@@ -39,6 +39,9 @@ nav{
     nav {
         padding: 1rem;
         width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .mobile-menu-btn {
@@ -50,33 +53,36 @@ nav{
     nav .btn {
         display: none;
     }
-
-    nav ul {
-        display: none;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(25, 25, 25, 0.98);
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-        padding: 2rem 1rem;
-        z-index: 1000;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 2rem;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        height: calc(100vh - 60px);
-        overflow-y: auto;
+    nav a.active{
+        padding: 7px 10px;
     }
 
-    nav ul.show {
-        display: flex;
-        opacity: 1;
-        animation: slideIn 0.4s ease-out;
-    }
+   nav ul {
+    display: flex;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(25, 25, 25, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 2rem 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none; /* prevent clicks when hidden */
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+    height: 35vh;
+}
+
+
+nav ul.show {
+    opacity: 1;
+    pointer-events: auto; /* allow clicks when open */
+    animation: slideIn 0.4s ease-out;
+}
 
     @keyframes slideIn {
         0% {
@@ -106,6 +112,7 @@ nav{
         transition: all 0.3s ease;
         color: var(--primary-color);
         box-shadow: 0 0 15px rgba(158, 255, 0, 0.1);
+        padding:6px;
     }
 
     nav .navbar-logo .Name {
@@ -125,7 +132,10 @@ nav{
 
 @media screen and (max-width: 480px) {
     nav {
-        padding: 0.5rem 1rem;
+        padding: 0rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav a {
@@ -152,7 +162,7 @@ nav{
 
     .mobile-menu-btn {
         font-size: 1.3rem;
-        padding: 0.3rem;
+        left:30px;
     }
 
     nav .btn {
@@ -187,7 +197,7 @@ nav a{
     color: white;
     font-size: 1rem; 
     border-radius:10px;
-    padding:14px 20px;
+    padding:8px 12px;
     margin: 0px;
 }
 

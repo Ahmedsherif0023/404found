@@ -15,7 +15,7 @@
   width: 100%;
 }
 .FAQCard-question {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
   margin: 10px;
@@ -82,6 +82,6 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
 
 @media screen and (max-width: 480px) {
   .FAQCard-container .FAQCard-question{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }

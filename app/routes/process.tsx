@@ -17,7 +17,7 @@ export default function Process() {
       <div className="Process">
 
      
-      <div className="second-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center work-div">
+      <div className="second-div min-h-[200px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center work-div">
         <h1 className="text-[50px]">Process of Starting the Project</h1>
         <p className="text-[20px]">
           At 404Found, we value transparency, collaboration, and delivering exceptional results.

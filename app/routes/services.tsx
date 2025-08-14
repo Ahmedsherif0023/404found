@@ -9,13 +9,14 @@ export default function Services() {
   return (
     <main >
       <Navbar />
-      <div className='Services-container'>
-        <div className="second-div min-h-[400px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
+      <div className="second-div min-h-[200px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center" >
           <h1 className="text-[60px]">Our Services</h1>
           <p className="text-[24px]">
            Transform your brand with our innovative digital solutions that captivate and engage your audience.
           </p>
         </div>
+      <div className='Services-container'>
+        
         <div className="service-type">
         <h1 id="design">Design</h1>
         <p>At 404Found, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences. </p>
@@ -120,15 +121,16 @@ export default function Services() {
           <ServiceCard title="Performance and Security Testing" img="/assets/Performance.png" />
           <ServiceCard title="Bug Tracking and Issue Resolution" img="/assets/Bug.png" />
         </div>
-        <div className="Thank-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
+        
+      </div>  
+        <div className="Thank-div min-h-[300px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center letus-div">
                <img src={Logo} alt="icon" />
                <h1>Let us Bring your Ideas to Life in the Digital World.</h1>
                <p>No matter which services you choose, we are committed to delivering exceptional results that exceed your expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified vision for your digital product.</p>
                 <div className="btn">
                     <a href="/contact" className="btn">Start Project</a>
                 </div>
-              </div>
-      </div>      
+              </div>  
       <Footer />
     </main>
   );

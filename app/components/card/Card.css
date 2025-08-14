@@ -27,8 +27,14 @@
     font-size: 24px;
   }
   
-  .card-description {
-    font-size: 14px;
+  .card .card-description {
+    font-size: 12px;
+    width: 40vh;
+  }
+
+  .card .card-button{
+    padding: 7px 7px;
+    font-size: 0.75rem;
   }
 }
 
@@ -45,9 +51,7 @@
     font-size: 20px;
   }
   
-  .card-description {
-    font-size: 13px;
-  }
+  
 }
 .card-title {
   font-size: 30px;

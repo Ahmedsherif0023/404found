@@ -57,3 +57,16 @@ background: linear-gradient(315deg, rgb(29, 29, 29) 60%, rgb(158, 255, 0) 130%);
     align-items: center;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width:768px) {
+  .jobcard-container{
+    margin: 0px auto;
+  }
+  .jobcard{
+    margin: 0px auto;
+    width: 100%;
+  }
+  .jobcard-button{
+    width: 20vh;
+  }
+}

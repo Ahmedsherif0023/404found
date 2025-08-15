@@ -125,6 +125,9 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
     .footer .socials {
         width: fit-content;
     }
+    .footer .nav ul a{
+        font-size: 0.85rem;
+    }
 }
 
 @media screen and (max-width: 480px) {

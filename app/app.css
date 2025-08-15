@@ -867,7 +867,7 @@ border-left:1px var(--grey-color) solid;
   border-top:none; */
   width:93%;
   margin: 0 auto;
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding:20px;
   color: var(--grey-color);
@@ -919,7 +919,7 @@ border-left:1px var(--grey-color) solid;
 
 .jobs{
   display:grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 equal-width columns */
+  grid-template-columns: repeat(3, 1fr); /* 2 equal-width columns */
   margin: 10px;
   width: 90%;
   margin:0 auto ;
@@ -1352,8 +1352,89 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
   font-size:15px;
   width:40vh;
 }
-.today .body{
-  
+.today .body .welcome{
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.today .body .welcome p{
+  font-size: 1rem;
+}
+.jointeam-div h1{
+  font-size: 20px;
+}
+.jointeam-div p{
+  font-size:1rem;
+}
+.welcoming-div{
+  border:1px solid var(--grey-color);
+}
+
+.welcoming-div h1{
+  font-size: 1.5rem;
+  width:40vh;
+  text-align: center;
+}
+.welcoming-div p{
+  font-size: 1rem;
+  width: 40vh;
+  text-align:center;
+}
+.welcoming-div .why{
+  margin: 20px auto 0px auto;
+}
+.reasons-to-work{
+  grid-template-columns: repeat(1, 1fr);
+  width:100%;
+}
+.reasons-to-work .reason h1{
+  font-size: 1.15rem;
+}
+.current-openings {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--grey-color);
+}
+.current-openings h1{
+  font-size: 1.5rem;
+}
+
+.current-openings p{
+  font-size: 1rem;
+}
+.job-type{
+  margin-top: 20px;
+  border: 1px solid var(--grey-color);
+}
+.jobs{
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom:20px;
+}
+.contact-ways{
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  gap: 10px;
+}
+.connected{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.connected .operating-days{
+  width: 90%;
+  margin-bottom:0px ;
+}
+.connected .socials{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 15vh;
+  gap:10px;
+  margin-top: 0px;
 }
 }
 
@@ -1407,7 +1488,7 @@ background: linear-gradient(0deg, rgb(29, 29, 29) 50%, rgb(51, 51, 51) 100%);
   }
 
   .second-div h1 {
-    font-size: 1.75rem !important;
+    font-size: 1.75rem;
   }
 
   .second-div p {

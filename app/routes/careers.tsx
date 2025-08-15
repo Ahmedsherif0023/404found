@@ -9,7 +9,7 @@ export default function Careers() {
     <main>
       <Navbar />
       <div className=" jointeam-div second-div min-h-[200px] mt-[20px] flex flex-col items-center justify-center text-[#fff] text-[20px] text-center ">
-              <h1 className="text-[20px]">Join Our Team at 404Found</h1>
+              <h1 >Join Our Team at 404Found</h1>
               <p>
               Unlock your potential and join our team of innovators and problem solvers.
               </p>
